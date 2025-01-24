@@ -4,6 +4,9 @@ Provides CSS for wrapping each letter in an HTML element in a box.
 
 The functionality is in `css-crossword-letter-boxes.css`, with a demo in `index.html`.
 
+There is a demo
+at [https://r9dtech.github.io/css-crossword-letter-boxes/](https://r9dtech.github.io/css-crossword-letter-boxes/).
+
 ## Usage
 
 To use, import `css-crossword-letter-boxes.css` apply the class `css-crossword-letter-boxes` to your element.
@@ -37,7 +40,6 @@ content doesn't scroll.
 Additionally, you should disable the browser's default styling for rendering for input boxes.
 
 ```html
-
 <style>
 	#my-input {
 		width: 11lh;
