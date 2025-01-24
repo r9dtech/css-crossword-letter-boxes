@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Demo: CSS Crossword Letter Boxes</title>
+    <link rel="stylesheet" href="css-crossword-letter-boxes.css">
+    <style>
+        #input-box-demo .css-crossword-letter-boxes {
+            width: 11lh;
+            appearance: none;
+            border: none;
+            padding-right: 0;
+        }
+
+        #block-demo .css-crossword-letter-boxes {
+            width: 14lh;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Demo: CSS Crossword Letter Boxes</h1>
+</header>
+<main>
+    <section id="input-box-demo">
+        <h2>Input box</h2>
+        <label>
+            Try typing in this input box:
+            <input class="css-crossword-letter-boxes" type="text" placeholder="..." maxlength="10">
+        </label>
+    </section>
+
+    <section id="inline-demo">
+        <h2>Inline elements</h2>
+        <p>It can be used on <span
+                class="css-crossword-letter-boxes css-crossword-letter-boxes-clip">inline elements</span> such as
+            <code>&lt;span&gt;</code>.
+        </p>
+    </section>
+
+    <section id="block-demo">
+        <h2>Block elements</h2>
+        <p>It can be used on block elements such as <code>&lt;div&gt;</code>:</p>
+        <div class="css-crossword-letter-boxes">Some text...</div>
+    </section>
+</main>
+</body>
+</html>
