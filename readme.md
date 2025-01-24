@@ -16,9 +16,9 @@ For block elements (or any element with a specified width), it is important to s
 ```html
 
 <style>
-    #my-div {
-        width: 6lh;
-    }
+	#my-div {
+		width: 6lh;
+	}
 </style>
 <div id="my-div" class="css-crossword-letter-boxes">sample</div>
 ```
