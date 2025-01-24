@@ -9,7 +9,7 @@ at [https://r9dtech.github.io/css-crossword-letter-boxes/](https://r9dtech.githu
 
 ## Usage
 
-To use, import `css-crossword-letter-boxes.css` apply the class `css-crossword-letter-boxes` to your element.
+To use, import `css-crossword-letter-boxes.css` and apply the class `css-crossword-letter-boxes` to your element.
 
 ### Block elements
 
