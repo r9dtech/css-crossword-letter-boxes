@@ -14,13 +14,17 @@ For block elements (or any element with a specified width), it is important to s
 `line-height`:
 
 ```html
-
 <style>
 	#my-div {
 		width: 6lh;
 	}
 </style>
-<div id="my-div" class="css-crossword-letter-boxes">sample</div>
+<div
+	id="my-div"
+	class="css-crossword-letter-boxes"
+>
+	sample
+</div>
 ```
 
 ### Input elements
@@ -35,13 +39,17 @@ Additionally, you should disable the browser's default styling for rendering for
 ```html
 
 <style>
-    #my-input {
-        width: 11lh;
-        appearance: none /* remove default browser styling */;
-        border: none /* remove default border */;
-    }
+	#my-input {
+		width: 11lh;
+		appearance: none /* remove default browser styling */;
+		border: none /* remove default border */;
+	}
 </style>
-<input id="my-input" class="css-crossword-letter-boxes" maxlength="10">
+<input
+	id="my-input"
+	class="css-crossword-letter-boxes"
+	maxlength="10"
+/>
 ```
 
 ### Inline elements
@@ -49,7 +57,9 @@ Additionally, you should disable the browser's default styling for rendering for
 Inline elements include the trailing letter spacing, so need to be clipped using an extra class:
 
 ```html
-<span class="css-crossword-letter-boxes css-crossword-letter-boxes-clip">test</span>
+<span class="css-crossword-letter-boxes css-crossword-letter-boxes-clip"
+	>test</span
+>
 ```
 
 ### Box size
@@ -58,7 +68,7 @@ The size of the boxes is dictated by the `line-height` of an element, so you can
 
 ```css
 .css-crossword-letter-boxes {
-    line-height: 1.5em;
+	line-height: 1.5em;
 }
 ```
 
@@ -68,7 +78,7 @@ The `css-crossword-letter-boxes` class uses `monospace`, but you can override th
 
 ```css
 .css-crossword-letter-boxes {
-    font-family: "Ubuntu Mono", monospace;
+	font-family: "Ubuntu Mono", monospace;
 }
 ```
 
@@ -77,18 +87,24 @@ It is important to have 'monospace' as the fallback font.
 ### Styling the boxes
 
 You can override the line width, line color, and background color:
+
 ```html
 <style>
-    #my-span {
-        --css-crossword-letter-boxes--line-width: 2px;
-        --css-crossword-letter-boxes--line-color: red;
-        --css-crossword-letter-boxes--background-colour: aliceblue;
-        &:hover {
-            --css-crossword-letter-boxes--background-colour: deepskyblue;
-        }
-    }
+	#my-span {
+		--css-crossword-letter-boxes--line-width: 2px;
+		--css-crossword-letter-boxes--line-color: red;
+		--css-crossword-letter-boxes--background-colour: aliceblue;
+
+		&:hover {
+			--css-crossword-letter-boxes--background-colour: deepskyblue;
+		}
+	}
 </style>
-<span id="my-span" class="css-crossword-letter-boxes css-crossword-letter-boxes-clip">example</span>
+<span
+	id="my-span"
+	class="css-crossword-letter-boxes css-crossword-letter-boxes-clip"
+	>example</span
+>
 ```
 
 ## Limitations

@@ -3,7 +3,6 @@
 	--css-crossword-letter-boxes--line-color: black;
 	--css-crossword-letter-boxes--background-colour: white;
 
-
 	font-family: monospace;
 
 	box-sizing: border-box;
@@ -11,47 +10,67 @@
 	letter-spacing: calc(1lh - 1ch);
 	padding-left: calc((1lh - 1ch) / 2);
 
-	box-shadow: inset 00lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 01lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 01lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 02lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 02lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 03lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 03lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 04lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 04lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 05lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 05lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 06lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 06lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 07lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 07lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 08lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 08lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 09lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 09lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 10lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 10lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 11lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 11lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 12lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 12lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 13lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 13lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 14lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 14lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 15lh 0 0 var(--css-crossword-letter-boxes--background-colour),
-	inset 15lh 0 0 var(--css-crossword-letter-boxes--line-width) var(--css-crossword-letter-boxes--line-color),
-	inset 16lh 0 0 var(--css-crossword-letter-boxes--background-colour);
+	box-shadow:
+		inset 00lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 01lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 01lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 02lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 02lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 03lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 03lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 04lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 04lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 05lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 05lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 06lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 06lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 07lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 07lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 08lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 08lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 09lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 09lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 10lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 10lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 11lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 11lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 12lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 12lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 13lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 13lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 14lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 14lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 15lh 0 0 var(--css-crossword-letter-boxes--background-colour),
+		inset 15lh 0 0 var(--css-crossword-letter-boxes--line-width)
+			var(--css-crossword-letter-boxes--line-color),
+		inset 16lh 0 0 var(--css-crossword-letter-boxes--background-colour);
 }
 
 .css-crossword-letter-boxes-clip {
 	clip-path: polygon(
 		/**
 		 inline elements include the letter-spacing after the last letter, which needs to be clipped off
-		*/ 0 0,
-		calc(100% - (1lh - 1ch) / 2 + var(--css-crossword-letter-boxes--line-width)) 0,
-		calc(100% - (1lh - 1ch) / 2 + var(--css-crossword-letter-boxes--line-width)) 100%,
+		*/
+			0 0,
+		calc(100% - (1lh - 1ch) / 2 + var(--css-crossword-letter-boxes--line-width))
+			0,
+		calc(100% - (1lh - 1ch) / 2 + var(--css-crossword-letter-boxes--line-width))
+			100%,
 		0 100%,
 		0 0
 	);
