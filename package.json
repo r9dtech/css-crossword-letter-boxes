@@ -2,7 +2,6 @@
 	"name": "css-crossword-letter-boxes",
 	"version": "1.0.0",
 	"description": "Provides CSS for wrapping each letter in an HTML element in a box.",
-	"main": "index.js",
 	"scripts": {
 		"lint": "prettier . --check",
 		"lint:fix": "prettier . --write"
