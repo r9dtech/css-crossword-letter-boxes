@@ -59,19 +59,13 @@
 		inset 15lh 0 0 var(--css-crossword-letter-boxes--line-width)
 			var(--css-crossword-letter-boxes--line-color),
 		inset 16lh 0 0 var(--css-crossword-letter-boxes--background-colour);
-}
 
-.css-crossword-letter-boxes-clip {
-	clip-path: polygon(
+	&::after {
 		/**
-		 inline elements include the letter-spacing after the last letter, which needs to be clipped off
+		 inline elements include the letter-spacing after the last letter, this negative margin trims it down to the nearest box size
 		*/
-			0 0,
-		calc(100% - (1lh - 1ch) / 2 + var(--css-crossword-letter-boxes--line-width))
-			0,
-		calc(100% - (1lh - 1ch) / 2 + var(--css-crossword-letter-boxes--line-width))
-			100%,
-		0 100%,
-		0 0
-	);
+		content: "";
+		display: inline-block;
+		margin-left: calc((1lh - 1ch) / -2);
+	}
 }

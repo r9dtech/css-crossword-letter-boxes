@@ -11,12 +11,17 @@ at [https://r9dtech.github.io/css-crossword-letter-boxes/](https://r9dtech.githu
 
 To use, import `css-crossword-letter-boxes.css` and apply the class `css-crossword-letter-boxes` to your element.
 
-### Block elements
-
-For block elements (or any element with a specified width), it is important to set the width to a multiple of the
-`line-height`:
+If your element is inline, this should just work:
 
 ```html
+<span class="css-crossword-letter-boxes">span</span>
+```
+
+For block elements (or any element with a specified width), it is important to set the width to a multiple of the
+`line-height`. Inline elements should just work.
+
+```html
+
 <style>
 	#my-div {
 		width: 6lh;
@@ -26,13 +31,13 @@ For block elements (or any element with a specified width), it is important to s
 	id="my-div"
 	class="css-crossword-letter-boxes"
 >
-	sample
+	sample one
 </div>
 ```
 
 ### Input elements
 
-Like block elements, input elements also need the width to be specified, and be a multiple of `line-height`.
+Input elements also need the width to be specified, and be a multiple of `line-height`.
 
 If the input has a maximum length, then you may want the width to be one `lh` longer than `maxlength` so that the
 content doesn't scroll.
@@ -52,16 +57,6 @@ Additionally, you should disable the browser's default styling for rendering for
 	class="css-crossword-letter-boxes"
 	maxlength="10"
 />
-```
-
-### Inline elements
-
-Inline elements include the trailing letter spacing, so need to be clipped using an extra class:
-
-```html
-<span class="css-crossword-letter-boxes css-crossword-letter-boxes-clip"
-	>test</span
->
 ```
 
 ### Box size
@@ -129,3 +124,7 @@ This will only work on relatively recent browsers supporting features like `var`
 ### Padding and box-sizing
 
 This will only work if you don't override certain css properties, such as `padding`, `box-sizing`, and `clip-path`.
+
+### `::after`
+
+Inline elements won't render properly if you use your own `::after` styling for them.
