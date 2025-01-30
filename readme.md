@@ -21,7 +21,6 @@ For block elements (or any element with a specified width), it is important to s
 `line-height`. Inline elements should just work.
 
 ```html
-
 <style>
 	#my-div {
 		width: 6lh;

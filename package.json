@@ -1,6 +1,6 @@
 {
 	"name": "css-crossword-letter-boxes",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Provides CSS for wrapping each letter in an HTML element in a box.",
 	"repository": "https://github.com/r9dtech/css-crossword-letter-boxes",
 	"scripts": {
