@@ -1,8 +1,10 @@
-.css-crossword-letter-boxes {
+:root {
 	--css-crossword-letter-boxes--line-width: 1px;
 	--css-crossword-letter-boxes--line-color: black;
 	--css-crossword-letter-boxes--background-colour: white;
+}
 
+.css-crossword-letter-boxes {
 	font-family: monospace;
 
 	box-sizing: border-box;
